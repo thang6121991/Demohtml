@@ -19,16 +19,27 @@
   <h1>Trang ví dụ</h1>
 
   <!-- Link theo dõi click tới dantri.com.vn -->
-  <a href="https://dantri.com.vn/" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'dantri.com.vn'});">
+  <a href="https://dantri.com.vn/" target="_blank";">
     Truy cập Dân Trí
   </a>
 
   <br><br>
 
   <!-- Link mở thanhnien.vn bằng window.open -->
-  <a href="#" onclick="window.open('https://thanhnien.vn/'); return false;">
+  <a href="#" onclick="openAndTrack() return false;">
     Mở Thanh Niên bằng window.open
   </a>
+<script>
+  function openAndTrack() {
+    // Mở trang mới trước
+    window.open('https://thanhnien.vn/', '_blank');
 
+    // Sau đó gửi sự kiện tới GA
+    gtag('event', 'click', {
+      'event_category': 'outbound',
+      'event_label': 'ThanhNien (opened first)'
+    });
+  }
+</script>
 </body>
 </html>
