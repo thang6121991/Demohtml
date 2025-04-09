@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Trang HTML Tĩnh</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4V1WVMW7T"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-W4V1WVMW7T');
+  </script>
+</head>
+<body>
+
+  <h1>Trang ví dụ</h1>
+
+  <!-- Link theo dõi click tới dantri.com.vn -->
+  <a href="https://dantri.com.vn/" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'dantri.com.vn'});">
+    Truy cập Dân Trí
+  </a>
+
+  <br><br>
+
+  <!-- Link mở thanhnien.vn bằng window.open -->
+  <a href="#" onclick="window.open('https://thanhnien.vn/'); return false;">
+    Mở Thanh Niên bằng window.open
+  </a>
+
+</body>
+</html>
