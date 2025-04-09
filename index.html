@@ -26,9 +26,19 @@
   <br><br>
 
   <!-- Link mở thanhnien.vn bằng window.open -->
-  <a href="#" onclick="openAndTrack() return false;">
-    Mở Thanh Niên bằng window.open
-  </a>
+<a href="#" onclick="
+  gtag('event', 'click', {
+    'event_category': 'outbound',
+    'event_label': 'https://thanhnien.vn',
+    'transport_type': 'beacon',
+    'event_callback': function() {
+      window.open('https://thanhnien.vn/', '_blank');
+    }
+  });
+  return false;
+">
+  Mở Thanh Niên (gửi GA thủ công)
+</a>
 <script>
   function openAndTrack() {
     // Mở trang mới trước
