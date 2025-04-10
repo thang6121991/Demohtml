@@ -18,9 +18,11 @@
 
   <h1>Trang ví dụ 1</h1>
 
-  <!-- Link theo dõi click tới dantri.com.vn -->
-  <a href="https://tuoitre.vn" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'https://tuoitre.vn'});">
-  123456</a>
+<a href="https://tuoitre.vn" onclick="gtag('event', 'click', {
+  'event_category': 'link',
+  'event_label': 'Tuổi Trẻ',
+  'link_url': 'https://tuoitre.vn'
+});" target="_blank">Tuổi Trẻ</a>
   <br><br>
 
   <!-- Link mở thanhnien.vn bằng window.open -->
@@ -44,7 +46,8 @@
     // Sau đó gửi sự kiện tới GA
     gtag('event', 'click', {
       'event_category': 'outbound',
-      'event_label': 'ThanhNien (opened first)'
+      'event_label': 'ThanhNien (opened first)',
+        'link_url': 'https://www.youtube.com/'
     });
   }
 </script>
