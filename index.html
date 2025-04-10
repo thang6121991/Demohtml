@@ -19,29 +19,27 @@
   <h1>Trang ví dụ 1</h1>
 
   <!-- Link theo dõi click tới dantri.com.vn -->
-  <a href="https://dantri.com.vn/" target="_blank";">
-    Truy cập Dân Trí
-  </a>
+  <a href="https://https://tuoitre.vn" target="_blank" onclick="gtag('event', 'click', {'event_category': 'link', 'event_label': 'https://tuoitre.vn'});">
 
   <br><br>
 
   <!-- Link mở thanhnien.vn bằng window.open -->
-<a onclick="
+<a href="#" onclick="
   gtag('event', 'click', {
     'event_category': 'link',
-    'event_label': 'https://thanhnien.vn'
+    'event_label': 'https://www.youtube.com/'
 
 
   });
-  window.open('https://thanhnien.vn/', '_blank');
+  window.open('https://www.youtube.com/', '_blank');
   return false;
 ">
-  Mở Thanh Niên (gửi GA thủ công)
+  Mở https://www.youtube.com/ (gửi GA thủ công)
 </a>
 <script>
   function openAndTrack() {
     // Mở trang mới trước
-    window.open('https://thanhnien.vn/', '_blank');
+    window.open('https://www.youtube.com/', '_blank');
 
     // Sau đó gửi sự kiện tới GA
     gtag('event', 'click', {
