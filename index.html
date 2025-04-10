@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Trang HTML Tĩnh</title>
-
+<script src="track-links.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-W4V1WVMW7T"></script>
   <script>
@@ -25,17 +25,7 @@
 });" target="_blank">Tuổi Trẻ</a>
   <br><br>
 
-  <!-- Link mở thanhnien.vn bằng window.open -->
-<a href="#" onclick="
-  gtag('event', 'click', {
-    'event_category': 'link',
-    'event_label': 'https://www.youtube.com/',
-    'link_url': 'https://www.youtube.com/'
-
-  });
-  window.open('https://www.youtube.com/', '_blank');
-  return false;
-">
+<a href="#" onclick="return onClick('https://www.youtube.com/', 'YouTube')">
   Mở https://www.youtube.com/ (gửi GA thủ công)
 </a>
 
