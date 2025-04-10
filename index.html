@@ -30,7 +30,7 @@
   gtag('event', 'click', {
     'event_category': 'link',
     'event_label': 'https://www.youtube.com/',
-  'link_url': 'https://www.youtube.com/',
+  'link_url': 'https://www.youtube.com/'
 
   });
   window.open('https://www.youtube.com/', '_blank');
@@ -38,18 +38,6 @@
 ">
   Mở https://www.youtube.com/ (gửi GA thủ công)
 </a>
-<script>
-  function openAndTrack() {
-    // Mở trang mới trước
-    window.open('https://www.youtube.com/', '_blank');
 
-    // Sau đó gửi sự kiện tới GA
-    gtag('event', 'click', {
-      'event_category': 'outbound',
-      'event_label': 'ThanhNien (opened first)',
-        'link_url': 'https://www.youtube.com/'
-    });
-  }
-</script>
 </body>
 </html>
